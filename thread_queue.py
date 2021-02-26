@@ -32,5 +32,5 @@ def main():
         threads[i].start()
     for i in range(thread_count):
         threads[i].join()
-
-main()
+if "__main__" == __name__:
+    main()
